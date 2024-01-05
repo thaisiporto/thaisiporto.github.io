@@ -50,7 +50,7 @@ main {
     width: 100%;
 }
 
-section#top p {
+section#top div.card p {
     margin: 10px 0;
     line-height: 1.5em;
     font-size: 0.95em;
@@ -62,17 +62,9 @@ section#lang {
     text-align: center;
     padding: 50px 20px;
     border-bottom: 5px solid #ffc039;
-    box-shadow: 0px 0px 5px 3px rgb(31, 31, 31);
-    z-index: 10;
-    margin: 20px 0;
+    box-shadow: 0px 0px 8px 3px rgb(26, 26, 26);
+    z-index: 100;
 }
-
-section#lang img {
-    width:80px;
-}
-
-
-
 
 section#projects {
     padding: 70px 15px;
@@ -81,6 +73,7 @@ section#projects {
 section#projects h1 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 1.8em;
 }
 
 div#gallery {
@@ -95,11 +88,18 @@ section#projects div.card {
     overflow: hidden;
     margin: 10px;
     text-align: left;
+    border-radius: 5px;
+    border-bottom: 2px solid #474747;
+    box-shadow: 0px 2px 10px black;
+}
+
+section#projects div.card:hover {
+    background-color: #303030;
 }
 
 section#projects div.card p {
     padding: 15px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
@@ -112,20 +112,53 @@ section#projects div.card img {
     width: 250px;
 }
 
+section#projects div.card img:hover {
+    mix-blend-mode: hard-light;
+}
+
+section#projects #port p {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+section#projects #port a {
+    background-color: #474747;
+    border-radius: 5px;
+    border-bottom: #303030 2px solid;
+    color: #f7f7f7;
+    text-decoration: none;
+    padding: 20px;
+}
+
+section#projects #port a:hover {
+    background-color: #303030;
+    box-shadow: 0px 0px 4px black;
+}
+
+
 
 footer {
     background-color: #0d5997;
     margin-top: 30px;
+    border-top: 8px solid #474747;
+    padding: 30px 20px;
 }
 
 footer p {
     text-align: center;
-    padding: 20px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 footer img {
     width: 50px;
     border-radius: 5px;
     margin: 2px;
-    border-bottom: 3px solid #1548AF;
+}
+
+footer img:hover {
+    filter: drop-shadow(0 0 3px #051941);
 }

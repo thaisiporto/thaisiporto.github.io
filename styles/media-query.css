@@ -10,7 +10,7 @@
 (min-width:1200px) GRANDES TELAS
 */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /* Smartphone e Pequenas Telas*/
 
     header {
         padding: 15px;
@@ -28,6 +28,7 @@
 
     section#top {
         width: 100%;
+        z-index: 0;
     }
 
     section#top p {
@@ -40,14 +41,32 @@
         margin: 0 auto;
     }
 
-    section#top div#image {
-        max-width: 400px;
-        margin: 0 auto;
+    section#top img {
+        max-width: 100%;
+        mix-blend-mode: multiply;
+    }
+
+    section#top #image {
+        background-color: #f7f7f7;
+    }
+
+    section#lang {
+        margin-bottom: 20px;
+        margin-top: -4px;
+    }
+
+    section#lang img {
+        width:80px;
+    }
+
+    section#projects div.card {
+        display: block;
+        margin: 30px auto;
     }
 
 }
 
-@media screen and (min-width:601px) and (max-width:992px) {
+@media screen and (min-width:601px) { /* Tablet, Desktop e Grandes Telas */
     header {
         padding: 30px 40px;
     }
@@ -64,56 +83,77 @@
         float:right;
     }
 
+    section#top {
+        margin: 0 auto;
+    }
+
+    section#top div#text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    section#top #image {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    section#lang {
+        margin: 20px 0;
+    }
+
+    section#lang img {
+        width:90px;
+    }
+
+    section#top img {
+        border-radius: 50%;
+        margin: 30px 0 30px 30px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:992px) { /* Tablet */
     section#top {
         min-width: 450px;
         max-width: 700px;
-        margin: 0 auto;
     }
 
     section#top div#text {
         width: 50%;
-        display: inline-block;
-        vertical-align: middle;
+        padding-right: 20px;
     }
     
-    section#top div#image {
+    section#top #image {
         width: 49%;
-        display: inline-block;
-        vertical-align: middle;
+    }
+
+    section#top img {
+        width: 270px;
     }
 }
 
-@media screen and (min-width:992px) {
-    header {
-        padding: 30px 40px;
-    }
 
-    header div {
-        display: inline-block;
-    }
 
-    section#top div#text {
-        padding: 20px 0 20px 20px;
-    }
-
-    header div#icons {
-        float:right;
-    }
-
+@media screen and (min-width:992px) { /* Desktop */
     section#top {
-        width: 990px;
-        margin: 0 auto;
+        width: 900px;
     }
 
     section#top div#text {
-        width: 49%;
-        display: inline-block;
-        vertical-align: middle;
+        width: 55%;
+        padding-right: 50px;
     }
     
-    section#top div#image {
-        width: 50%;
+    section#top #image {
+        width: 44%;
+    }
+
+    section#top img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1150px) { /* Grandes Telas */
+    div.double {
         display: inline-block;
-        vertical-align: middle;
     }
 }
