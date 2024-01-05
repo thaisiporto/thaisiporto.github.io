@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
     <title>Portfólio de Código</title>
 </head>
 <body>
@@ -17,30 +18,46 @@
         </div>
     </header>
     <main>
-        <div id="text">
-            <p>Olá! Me chamo Thaisi! Uma Designer tentando aprender esse negócio de código.</p>
-            <p>Nessa página estão todos os projetos criados durante a minha jornada de aprendizado!</p>
-        </div>
-        <div id="image"><img src="images/studying-girl.svg" alt=""></div>
-        <div id="projects">
-            <div class="gallery">
-                <a href="#">
-                    <img src="images/damone.jpg" alt="">
-                    <p>Tela de Login</p></a>
+        <section id="top">
+            <div id="text">
+                <p>Olá! Me chamo Thaisi! Uma Designer tentando aprender esse negócio de código.</p>
+                <p>Nessa página estão todos os projetos criados durante a minha jornada de aprendizado!</p>
             </div>
-            <div class="gallery">
-                <a href="#">
-                    <img src="images/damone.jpg" alt="">
-                    <p>Tela de Login</p></a>
+            <div id="image"><img src="images/studying-girl.svg" alt=""></div>
+        </section>
+
+        <section id="lang">
+            <img src="images/icons/html5.svg" alt="HTML 5">
+            <img src="images/icons/css3.svg" alt="CSS 3">
+        </section>
+
+        <section id="projects">
+            <h1>Projetos</h1>
+            <div id="gallery">
+                <div class="card">
+                    <a href="#" target="_blank">
+                        <img src="images/placeholder.png" alt="" >
+                        <p>Tela de Login</p></a>
+                </div>
+                <div class="card">
+                    <a href="#" target="_blank">
+                        <img src="images/placeholder.png" alt="">
+                        <p>Links Sociais</p></a>
+                </div>
+                <div class="card">
+                    <a href="#" target="_blank">
+                        <img src="images/placeholder.png" alt="">
+                        <p>Currículo</p></a>
+                </div>
             </div>
-            <div class="gallery">
-                <a href="#">
-                    <img src="images/damone.jpg" alt="">
-                    <p>Tela de Login</p></a>
-            </div>
+        </section>
     </main>
     <footer>
-        
+        <p>
+            <a href="#"><img src="images/icons/behance.svg" target="_blank" alt="portfólio behance"></a>
+            <a href="#"><img src="images/icons/github.svg" target="_blank" alt="GitHub"></a>
+            <a href="#"><img src="images/icons/instagram.svg" target="_blank" alt="Instagram"></a>
+        </p>
     </footer>
 </body>
 </html>
