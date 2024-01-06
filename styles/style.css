@@ -122,20 +122,20 @@ section#projects #port p {
     font-size: 0.9em;
     text-transform: uppercase;
     font-weight: 600;
+    background-color: #474747;
+    padding: 20px;
+    border-bottom: #303030 2px solid;
+    border-radius: 5px;
+}
+
+section#projects #port p:hover {
+    background-color: #303030;
+    box-shadow: 0px 0px 4px black;
 }
 
 section#projects #port a {
-    background-color: #474747;
-    border-radius: 5px;
-    border-bottom: #303030 2px solid;
     color: #f7f7f7;
     text-decoration: none;
-    padding: 20px;
-}
-
-section#projects #port a:hover {
-    background-color: #303030;
-    box-shadow: 0px 0px 4px black;
 }
 
 
