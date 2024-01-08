@@ -47,6 +47,10 @@ section#top div.card p {
     font-size: 0.95em;
 }
 
+section#top p {
+    margin-bottom: 20px;
+}
+
 section#lang {
     background-color: #FFB30D;
     width: 100%;
