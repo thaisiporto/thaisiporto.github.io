@@ -99,10 +99,23 @@ section#projects div.card p {
 }
 
 section#projects div.card p.tags {
-    padding: 3px 15px 15px 15px;
+    padding: 3px 15px 10px 15px;
     font-size: 0.8em;
     font-weight: 400;
     color: #ffc039;
+}
+
+section#projects div.card p.linkGithub {
+    font-size: 0.7em;
+    font-weight: 300;
+    padding: 0 15px 20px 15px;
+}
+
+section#projects div.card p.linkGithub img {
+    width: 18px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    border-radius: 3px;
 }
 
 section#projects div.card a {
